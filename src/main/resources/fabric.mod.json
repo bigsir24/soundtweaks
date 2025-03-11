@@ -1,44 +1,38 @@
 {
-  "schemaVersion": 1,
-  "id": "examplemod",
-  "version": "${version}",
+	"schemaVersion": 1,
+	"id": "soundtweaks",
+	"version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This mod aims to help new BTA modders.",
-  "authors": [
-    "Turnip Labs"
-  ],
-  "contact": {
-    "homepage": "",
-    "sources": ""
-  },
+	"name": "Sound Tweaks",
+	"description": "Various changes related to sound.",
+	"authors": [
+		"Big Sir"
+	],
+	"contact": {
+		"homepage": "",
+		"sources": ""
+	},
 
 	"icon": "icon.png",
-  "license": "CC0-1.0",
+	"license": "GPL-3.0",
 
-  "environment": "*",
-  "entrypoints": {
-    "main": [
-			"turniplabs.examplemod.ExampleMod"
-    ],
-		"beforeGameStart": [
-			"turniplabs.examplemod.ExampleMod"
+	"environment": "*",
+	"entrypoints": {
+		"beforeClientStart": [
+			"bigsir.soundtweaks.SoundTweaks"
 		],
-		"afterGameStart": [
-			"turniplabs.examplemod.ExampleMod"
-		],
-		"recipesReady": [
-			"turniplabs.examplemod.ExampleMod"
+		"afterClientStart": [
+			"bigsir.soundtweaks.SoundTweaks"
 		]
 	},
-  "mixins": [
-      "examplemod.mixins.json"
-  ],
+	"mixins": [
+		"soundtweaks.mixins.json"
+	],
 
-  "depends": {
+	"depends": {
 		"minecraft": "*",
-    "fabricloader": ">=0.15.5"
-  },
-  "suggests": {
-  }
+		"fabricloader": ">=0.15.5"
+	},
+	"suggests": {
+	}
 }

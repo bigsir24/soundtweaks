@@ -1,0 +1,24 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "bigsir.soundtweaks.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+  ],
+  "client": [
+    "CommandObjectMixin",
+    "LibraryLWJGL3OpenALMixin",
+    "MinecraftMixin",
+    "MobMixin",
+    "excluded.MobMixin",
+    "SoundEngineMixin",
+    "SoundSystemMixin",
+    "SourceMixin",
+    "WorldMixin",
+    "excluded.EntityMixin",
+    "excluded.MobSkeletonMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
